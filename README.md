@@ -30,10 +30,10 @@
 ### 訂票
 * 先選擇艙等，再使用「+」、「-」選擇人數（最多10人），下方乘客名單的數量會自動增減
 * 乘客名單的所有欄位皆須填寫
+* 乘客名單下方會幫你計算總金額（右圖）
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/87929219/171994313-6eb9ae09-24f9-4cfd-a2d3-20e8b31185bf.png"><img width="500" alt="image" src="https://user-images.githubusercontent.com/87929219/171994571-e58f35ec-356e-427f-8947-9c85cb0e8c04.png">
 
-* 乘客名單下方會幫你計算總金額
 * 如果已有綁定信用卡，系統會自動填入（左圖）
 * 沒有綁定信用卡的帳戶，則會讓你選擇是否將此次使用的信用卡綁定至本帳戶（右圖）
 * 手機號碼不列入自動填寫的內容
@@ -63,9 +63,7 @@
 * 輸入完成後，點擊「儲存」可保存變更，點擊「取消」將會變回先前的內容
 * 更改密碼需要檢查較多條件，因此不適用於「編輯模式」
 * 信用卡資訊是獨立的區域，不適用於「編輯模式」
-
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/87929219/171995871-61cd2e91-a98a-4553-87cc-857129bf1774.png"><img width="500" alt="image" src="https://user-images.githubusercontent.com/87929219/171995906-dc681e54-eb2d-4a71-adef-403df50e71dd.png">
-
-* 更改密碼為獨立的區域
 * 變更信用卡資訊的方式為：<br>
   先點擊「刪除」，移除原先的信用卡，再輸入欲使用的信用卡資訊，點擊「新增」
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/87929219/171995871-61cd2e91-a98a-4553-87cc-857129bf1774.png"><img width="500" alt="image" src="https://user-images.githubusercontent.com/87929219/171995906-dc681e54-eb2d-4a71-adef-403df50e71dd.png">
