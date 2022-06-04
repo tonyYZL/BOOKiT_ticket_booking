@@ -19,6 +19,14 @@
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/87929219/171993689-2684de87-9bb4-4e88-86bc-518d09c41c8b.png"><img width="500" alt="image" src="https://user-images.githubusercontent.com/87929219/171993780-3b76c582-8c7c-41b3-acd2-8e561e9f51c9.png">
 
+### 首頁「最近預定的航班」
+* 如果有訂過機票，首頁會顯示近期的三筆資料（至多三筆）
+* 顯示的資料為出發時間由近到遠排序，與「訂票紀錄」頁面不同
+* 點擊右下方「查看所有紀錄」可跳至訂票紀錄頁面
+
+<img width="1332" alt="image" src="https://user-images.githubusercontent.com/87929219/171996384-5f6891af-9453-47ce-8904-c29200b22618.png">
+
+
 ### 找航班
 * 選擇出發地、目的地及出發日期，點擊搜尋可查看所有符合條件的航班
 * 出發地和目的地之間的雙箭頭圖示可將左右兩欄位內容互換
