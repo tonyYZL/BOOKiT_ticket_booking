@@ -2,9 +2,7 @@
 ## 第40組
 110502523 李昱澤、110502010 莊秉郁、110502520 廖耀馳、110502522黃彥程
 
-![image](https://user-images.githubusercontent.com/87929219/171992394-fb0667fc-d52d-4857-883a-14472605adda.png)
-
-
+![image](https://user-images.githubusercontent.com/87929219/171999629-540711ee-0b71-42f6-8534-dbbf0c028782.png)
 
 操作方式
 ===
@@ -58,9 +56,11 @@
 ### 登機證
 * 接續上一步驟，展開訂單資訊後，點擊「電子登機證」，可以選擇想要的樣式（左圖）
 * 選好後，點擊右上方「確定」，並選擇儲存位置
-* 儲存成功後會跳通知提示，點擊通知上的「查看」，可以直接檢視你的登機證（右圖）
+* 儲存成功後會跳通知提示，點擊通知上的「查看」，可以直接檢視你的登機證（下圖）
 
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/87929219/171995478-d441a299-cfad-461a-8c1b-7b3df044bec3.png"><img width="500" alt="image" src="https://user-images.githubusercontent.com/87929219/171995594-2b7cd385-fb5a-4bac-b77e-ea120696e606.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/87929219/171995478-d441a299-cfad-461a-8c1b-7b3df044bec3.png"><img width="500" alt="image" src="https://user-images.githubusercontent.com/87929219/171999869-488878fb-81ab-417b-8ea1-dd9003746f05.png">
+<img width="1332" alt="image" src="https://user-images.githubusercontent.com/87929219/171995594-2b7cd385-fb5a-4bac-b77e-ea120696e606.png">
+
 
 * 建立的檔案為一份PDF檔案，裡面包含所有乘客的登機證
 
