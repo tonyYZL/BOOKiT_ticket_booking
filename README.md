@@ -10,6 +10,7 @@
 ===
 ### 登入註冊
 最一開始出現的畫面，會有登入跟註冊兩個選擇，輸入符合格式的內容就可以成功註冊或登入，輸入有誤都會彈出小框框提醒你
+
 <img width="450" alt="image" src="https://user-images.githubusercontent.com/87929219/171993666-42d35658-721b-4bf1-b6b3-952753049005.png"><img width="450" alt="image" src="https://user-images.githubusercontent.com/87929219/171993373-c8235028-1adb-4f22-b90b-da98478b7f2f.png">
 
 ### 首頁
@@ -25,7 +26,6 @@
 * 點擊右下方「查看所有紀錄」可跳至訂票紀錄頁面
 
 <img width="1332" alt="image" src="https://user-images.githubusercontent.com/87929219/171996384-5f6891af-9453-47ce-8904-c29200b22618.png">
-
 
 ### 找航班
 * 選擇出發地、目的地及出發日期，點擊搜尋可查看所有符合條件的航班
