@@ -4,6 +4,37 @@
 
 ![image](https://user-images.githubusercontent.com/87929219/171999629-540711ee-0b71-42f6-8534-dbbf0c028782.png)
 
+匯入資料庫（使用MySQLWorkbench）
+===
+step1. 建一個新的連線，輸入完名稱直接按ok
+
+<img width="912" alt="image" src="https://user-images.githubusercontent.com/87929219/172101244-5cbda18e-e352-4074-8a0c-000664e507d8.png">
+
+step2. Server -> Data Import
+
+<img width="1440" alt="Screen Shot 2022-06-06 at 13 38 06" src="https://user-images.githubusercontent.com/87929219/172101505-6880634a-8273-49e1-a07e-18e0451a33bb.png">
+
+step3. Import from Self-contained File -> 選.sql的那個檔案 -> Start Import
+
+<img width="1500" alt="image" src="https://user-images.githubusercontent.com/87929219/172101719-7fca3dd7-6769-480d-9c49-3c4f6697e397.png">
+
+step4. 完成後刷新左邊欄位，看到「system22」就完成了
+
+<img width="1136" alt="Screen Shot 2022-06-06 at 13 44 20" src="https://user-images.githubusercontent.com/87929219/172102525-c93278e7-aa40-4236-8bd2-a3c3c88c7b27.png">
+
+讓程式連接資料庫
+===
+step1. 在專案中新增 `mysql-connector-java-8.0.29.jar`
+
+step2. 開啟 `DatabaseConnection.java`
+
+step3. 修改以下三行程式碼
+```java
+String databaseName = "system22";
+String databaseUser = "yourName";
+String databasePassword = "yourPassword";
+```
+
 操作方式
 ===
 ### 登入註冊
