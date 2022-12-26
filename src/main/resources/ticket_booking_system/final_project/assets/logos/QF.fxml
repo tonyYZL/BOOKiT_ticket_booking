@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.SVGPath?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      xmlns="http://javafx.com/javafx">
+<SVGPath content="M0.00153501 0H0L0.480133 1.25745L2.61022 6.84373L14.2534 37.3967H52.6084L21.8745 6.52933C17.78 2.43299 12.2223 0 6.43221 0H0.00190713H0.00153501Z">
+    <fill>
+        <LinearGradient endX="0.14820585" endY="0.0" startX="0.63478426" startY="0.99854278">
+            <stops>
+                <Stop>
+                    <color>
+                        <Color red="0.7450980544090271" />
+                    </color>
+                </Stop>
+                <Stop offset="0.006711409395973154">
+                    <color>
+                        <Color red="0.7450980544090271" />
+                    </color>
+                </Stop>
+                <Stop offset="1.0">
+                    <color>
+                        <Color red="1.0" />
+                    </color>
+                </Stop>
+            </stops>
+        </LinearGradient>
+    </fill></SVGPath>
+<SVGPath content="M2.60922 6.8441C6.80844 14.0156 17.8286 14.772 19.027 25.9235C19.0765 26.3808 19.4271 26.7485 19.8844 26.8209C26.2347 27.8136 32.4192 30.4276 37.7939 34.7354L37.797 34.7385C37.8331 34.767 37.8694 34.7804 37.9169 34.7804C37.9645 34.7804 38.0122 34.7632 38.0503 34.729C38.1265 34.6548 38.1283 34.5347 38.0564 34.4585C34.3354 30.547 29.7875 27.4204 24.6833 25.3665L23.1305 24.7416C22.3303 24.4196 21.7759 23.627 21.8006 22.7143C21.8863 19.3839 29.7666 20.0603 30.5649 18.4599L30.7021 18.1836C29.0807 16.7966 27.1525 15.7544 25.0301 15.1714C25.011 15.2514 24.9596 15.6401 25.3901 16.3431C25.8607 17.109 24.8776 18.3246 23.4449 17.0119L23.3249 16.9032C12.6782 7.14821 4.69704 12.2067 0.47876 1.25708L2.60884 6.84336L2.60922 6.8441Z" fill="white" />
+<SVGPath content="M24.6519 17.5931V20.251C25.8007 19.9195 27.1077 19.7137 28.209 19.4832V18.0028C28.209 18.0028 26.4638 18.0886 25.393 16.3433C25.7112 16.8634 25.3587 17.5912 24.6519 17.5931">
+    <fill>
+        <LinearGradient endX="0.5509691" endY="0.02754808" startX="0.4540927" startY="1.0">
+            <stops>
+                <Stop>
+                    <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                    </color>
+                </Stop>
+                <Stop offset="0.65">
+                    <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                    </color>
+                </Stop>
+                <Stop offset="0.95">
+                    <color>
+                        <Color red="0.6352941393852234" green="0.6470588445663452" blue="0.6392157077789307" />
+                    </color>
+                </Stop>
+                <Stop offset="1.0">
+                    <color>
+                        <Color red="0.6335999965667725" green="0.6399999856948853" blue="0.6357333064079285" />
+                    </color>
+                </Stop>
+            </stops>
+        </LinearGradient>
+    </fill></SVGPath>
+<SVGPath content="M21.2014 27.051C27.0868 28.1827 32.7912 30.7243 37.7926 34.7349C29.7904 27.8969 24.9129 26.8547 22.6666 26.8547C21.7826 26.8547 21.3043 27.0167 21.2014 27.051Z">
+    <fill>
+        <LinearGradient endY="0.50009898" startX="0.00003675" startY="0.50009898">
+            <stops>
+                <Stop>
+                    <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                    </color>
+                </Stop>
+                <Stop offset="0.9">
+                    <color>
+                        <Color red="0.6352941393852234" green="0.6470588445663452" blue="0.6392157077789307" />
+                    </color>
+                </Stop>
+                <Stop offset="1.0">
+                    <color>
+                        <Color red="0.6352941393852234" green="0.6470588445663452" blue="0.6392157077789307" />
+                    </color>
+                </Stop>
+            </stops>
+        </LinearGradient>
+    </fill></SVGPath>
+    <SVGPath content="M0.479736 1.25732L2.60987 6.8436C6.80719 14.0151 17.8273 14.7714 19.0276 25.9192C17.8139 11.6906 11.5647 13.8169 4.85047 7.34276C3.11858 6.11005 1.65339 4.30386 0.479736 1.25732Z">
+        <fill>
+            <LinearGradient endY="0.50002028" startX="0.00001315" startY="0.50002028">
+                <stops>
+                    <Stop>
+                        <color>
+                            <Color red="1.0" green="1.0" blue="1.0" />
+                        </color>
+                    </Stop>
+                    <Stop offset="0.006711409395973154">
+                        <color>
+                            <Color red="1.0" green="1.0" blue="1.0" />
+                        </color>
+                    </Stop>
+                    <Stop offset="0.43">
+                        <color>
+                            <Color red="1.0" green="1.0" blue="1.0" />
+                        </color>
+                    </Stop>
+                    <Stop offset="1.0">
+                        <color>
+                            <Color red="0.6352941393852234" green="0.6470588445663452" blue="0.6392157077789307" />
+                        </color>
+                    </Stop>
+                </stops>
+            </LinearGradient>
+        </fill></SVGPath>
+</Pane>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.SVGPath?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      xmlns="http://javafx.com/javafx">
+    <SVGPath content="M47.6946 0L25.1142 39.0942H31.4017L53.9737 0H0.36438H47.6946Z" fill="#00B3F0"/>
+    <SVGPath content="M25.1145 39.0949L47.6949 0.000732422H22.5753L0 39.0949H25.1145V39.0949Z" fill="#223F9A"/>
+</Pane>

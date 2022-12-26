@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.SVGPath?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+    <SVGPath content="M42.3952 0H27.5559V30H36.0302V21.4136H42.3952C48.2403 21.4136 53 16.619 53 10.7052C53 4.78037 48.2403 0 42.3952 0ZM42.3952 12.8494H36.0302V8.56429H42.3952C43.5571 8.56429 44.5206 9.514 44.5206 10.7052C44.5206 11.8834 43.5571 12.8494 42.3952 12.8494Z" fill="#EB2D2E" fillRule="EVEN_ODD" />
+    <SVGPath content="M0 0.00269424V8.56698H6.34899V29.9975H14.8477L16.4479 24.653H25.9724L27.5559 29.9975V0.00269424H0ZM18.9648 16.0718L21.2069 8.56698L23.433 16.0718H18.9648Z" fill="#BFD33B" fillRule="EVEN_ODD" />
+    <SVGPath content="M6.34898 30H14.8502V8.56688L21.2069 8.56698L21.2069 0H14.8502" fill="#72BC4A" />
+    <SVGPath content="M27.5559 30H36.0302L27.5559 0" fill="#C92C32" />
+</Pane>
