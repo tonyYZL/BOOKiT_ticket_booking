@@ -1,0 +1,66 @@
+.text {
+    -fx-font-size: 20;
+    -fx-text-fill: "#8E8E8E";
+}
+.text-to-black {
+    -fx-text-fill: "#000000";
+}
+.blacktext {
+    -fx-font-size: 20;
+    -fx-text-fill: "#000000";
+}
+.whitetext {
+    -fx-font-size: 20;
+    -fx-text-fill: "#FFFFFF";
+}
+.text_hover {
+    -fx-font-size: 20;
+    -fx-text-fill: "#8E8E8E";
+}
+.rectanglebox {
+    -fx-background-radius: 10;
+    -fx-background-color: "#FFFFFF";
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.08), 30, 0, 0, 0);
+}
+.paneradius20 {
+    -fx-background-radius: 20;
+        -fx-background-color: "#FFFFFF";
+        -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.08), 30, 0, 0, 0);
+}
+.orangepane {
+    -fx-background-radius: 20;
+    -fx-background-color: "#FFF5DD";
+}
+.shadowpane {
+    -fx-background-radius: 10;
+    -fx-background-color: "#FFFFFF";
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.25), 30, 0, 0, 0);
+}
+.textfield {
+    -fx-background-radius: 10;
+    -fx-background-color: "#FFFFFF";
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.08), 30, 0, 0, 0);
+    -fx-prompt-text-fill: "#8E8E8E";
+    -fx-focus-traversable: "false";
+}
+.searchbutton {
+    -fx-background-radius: 5;
+    -fx-background-color: "#F9A826";
+    -fx-effect: dropShadow(three-pass-box, rgba(249, 168, 38, 0.6), 20, 0, 0, 5);
+}
+
+.blacktext:hover {
+    -fx-text-fill: "#CC9300"
+}
+.text_hover:hover {
+    -fx-text-fill: "#CC9300"
+}
+
+.text_pressed {
+    -fx-text-fill: "#CC9300"
+}
+
+.datetext {
+    -fx-font-size: 20;
+    -fx-text-fill: "#000000";
+}

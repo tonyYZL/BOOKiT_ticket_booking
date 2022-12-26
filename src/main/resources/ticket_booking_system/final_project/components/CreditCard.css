@@ -1,0 +1,26 @@
+.welcome-text {
+    -fx-font-size: 32;
+    -fx-fill: "#CC9300";
+}
+
+.credit-card-text {
+    -fx-font-size: 32;
+}
+
+.edit-text {
+    -fx-font-size: 24;
+    -fx-fill: "#CC9300";
+}
+.edit-btn:hover .edit-text{
+    -fx-fill: "#ECBC41";
+}
+
+.card-pane:hover {
+    -fx-opacity: 1;
+}
+
+.gradient-bar {
+    -fx-background-radius: 34;
+    -fx-background-color: linear-gradient(to right, #FFD770, #FF9E87);
+    -fx-opacity: 0.8;
+}

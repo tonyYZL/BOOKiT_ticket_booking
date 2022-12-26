@@ -1,0 +1,10 @@
+.bigpane {
+    -fx-background-radius: 20;
+    -fx-background-color: "#FFFFFF";
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.08), 20, 0, 0, 0);
+}
+.reservation {
+    -fx-background-radius: 5;
+    -fx-background-color: "#72BBFF";
+    -fx-effect: dropShadow(three-pass-box, rgba(49, 156, 225, 0.6), 20, 0, 0, 5);
+}

@@ -1,0 +1,34 @@
+.infobutton{
+    -fx-background-color:linear-gradient(to right, #FFA386 , #FFB87D );
+    -fx-background-radius:5;
+    -fx-effect:dropShadow(three-pass-box,rgba(255, 134, 160, 0.6),20,0,0,5);
+}
+
+.infobutton:hover{
+    -fx-effect:dropShadow(three-pass-box,rgba(255, 134, 160, 0.6),20,0,0,5);
+}
+
+.outpane{
+    -fx-background-color:transparent;
+}
+
+.innerpane{
+    -fx-background-color:white;
+    -fx-effect:dropShadow(three-pass-box,rgba(0, 0, 0, 0.08),30,0,0,0);
+    -fx-background-radius:50 20 20 20;
+}
+
+.recordcard{
+    -fx-background-radius:10;
+    -fx-background-color:white;
+    -fx-effect:dropShadow(three-pass-box, rgba(0, 0, 0, 0.08), 30, 0, 0, 0);
+}
+
+.electric{
+    -fx-background-color:linear-gradient(to right, #FFA386 , #FFB87D );
+    -fx-background-radius: 5;
+    -fx-effect:dropShadow(three-pass-box,rgba(255, 134, 160, 0.6),20,0,0,5);
+}
+
+.electric:hover{
+}

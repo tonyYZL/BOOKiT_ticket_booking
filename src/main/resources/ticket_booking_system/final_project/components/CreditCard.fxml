@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="creditCard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="271.0" prefWidth="903.0" stylesheets="@CreditCard.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="ticket_booking_system.final_project.CreditCardController">
+   <children>
+      <Text fx:id="username" layoutX="51.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="welcome-text" text="使用者，您好" y="39.0" />
+      <Text fx:id="haveCardText" layoutX="51.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="credit-card-text" text="目前綁定的信用卡" visible="false" y="39.0" />
+      <Text fx:id="noCardText" layoutX="51.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="credit-card-text" text="目前尚未綁定任何信用卡" y="39.0" />
+      <Pane layoutY="184.0" prefHeight="67.0" prefWidth="903.0" styleClass="gradient-bar" />
+      <Pane fx:id="editBtn" styleClass="edit-btn" onMouseClicked="#goToInfoScreen" layoutX="330.0" layoutY="105.0" prefHeight="29.0" prefWidth="76.0" visible="false">
+         <children>
+            <Text layoutX="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="edit-text" text="編輯" y="20.0" />
+            <SVGPath styleClass="edit-text" content="M3 17.2812H7.24C7.37161 17.282 7.50207 17.2547 7.62391 17.201C7.74574 17.1473 7.85656 17.0681 7.95 16.9681L14.87 9.48586L17.71 6.48435C17.8037 6.38398 17.8781 6.26456 17.9289 6.13299C17.9797 6.00143 18.0058 5.8603 18.0058 5.71777C18.0058 5.57524 17.9797 5.43412 17.9289 5.30255C17.8781 5.17098 17.8037 5.05157 17.71 4.9512L13.47 0.319368C13.377 0.218171 13.2664 0.137849 13.1446 0.083035C13.0227 0.028221 12.892 0 12.76 0C12.628 0 12.4973 0.028221 12.3754 0.083035C12.2536 0.137849 12.143 0.218171 12.05 0.319368L9.23 3.37487L2.29 10.8571C2.19732 10.9579 2.12399 11.0776 2.07423 11.2091C2.02446 11.3407 1.99924 11.4815 2 11.6236V16.2015C2 16.4878 2.10536 16.7625 2.29289 16.9649C2.48043 17.1674 2.73478 17.2812 3 17.2812ZM12.76 2.60829L15.59 5.66379L14.17 7.19694L11.34 4.14144L12.76 2.60829ZM4 12.0663L9.93 5.66379L12.76 8.71929L6.83 15.1218H4V12.0663ZM19 19.4405H1C0.734784 19.4405 0.48043 19.5543 0.292893 19.7568C0.105357 19.9592 0 20.2339 0 20.5202C0 20.8066 0.105357 21.0812 0.292893 21.2837C0.48043 21.4861 0.734784 21.5999 1 21.5999H19C19.2652 21.5999 19.5196 21.4861 19.7071 21.2837C19.8946 21.0812 20 20.8066 20 20.5202C20 20.2339 19.8946 19.9592 19.7071 19.7568C19.5196 19.5543 19.2652 19.4405 19 19.4405Z" fill="#CC9300" />
+         </children>
+      </Pane>
+      <Pane fx:id="cardPane" layoutX="524.0" layoutY="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#addCard" />
+      <Text fx:id="cardNumber" fill="WHITE" layoutX="738.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0 0 0 0" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="expireDate" fill="WHITE" layoutX="555.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00/00" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+
+   </children>
+</Pane>

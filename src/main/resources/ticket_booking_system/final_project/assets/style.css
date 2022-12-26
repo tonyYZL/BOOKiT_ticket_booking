@@ -1,0 +1,28 @@
+.gradient-card {
+    -fx-fill: linear-gradient(to bottom left, #5E5E5E, #2E2E2E);
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.25), 20, 0, 4, 4);
+}
+
+.empty-card {
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-border-color: "#2E2E2E";
+    -fx-border-width: 1;
+    -fx-background-color: rgba(255, 255, 255, 0.75);
+        -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.25), 20, 0, 4, 4);
+
+}
+
+.empty-card:hover .line {
+    -fx-stroke: "#000000";
+}
+
+.circle {
+    -fx-stroke: "#CC9300";
+    -fx-fill: transparent;
+}
+
+.line {
+    -fx-stroke: "#CC9300";
+    -fx-fill: transparent;
+}

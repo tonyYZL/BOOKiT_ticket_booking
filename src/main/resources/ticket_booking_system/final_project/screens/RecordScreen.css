@@ -1,0 +1,59 @@
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.modal-scene {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+}
+
+.rectangle {
+    -fx-stroke-width: 0;
+    -fx-fill: "#F9A826";
+}
+
+.title-text {
+    -fx-fill: "#FFFFFF";
+    -fx-font-size: 32;
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.3), 25, 0, 0, 5);
+}
+
+.cancel-btn {
+    -fx-font-size: 20;
+    -fx-text-fill: "#FFFFFF";
+    -fx-alignment: center;
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.3), 25, 0, 0, 5);
+}
+.cancel-btn:hover {
+    -fx-text-fill: "#ECBC41";
+}
+
+.get-btn {
+    -fx-text-fill: "#FFFFFF";
+    -fx-font-size: 20;
+    -fx-alignment: center;
+    -fx-background-color: "#F9A826";
+    -fx-background-radius: 5;
+    -fx-effect: dropShadow(three-pass-box, rgba(249, 168, 38, 0.6), 20, 0, 0, 5);
+}
+
+.get-btn:hover {
+    -fx-background-color: "#CC9300";
+}
+
+.hover-border {
+    -fx-border-color: "#F9A82600";
+    -fx-border-width: 5;
+    -fx-border-radius: 20;
+}
+
+.hover-border-show {
+    -fx-border-color: "#F9A82670";
+}
+
+.loading-pane {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="381.0" spacing="5.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.25), 30, 0, 0, 0);" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <children>
+      <StackPane prefHeight="150.0" prefWidth="27.0">
+         <children>
+              <SVGPath content="M13.5 27C20.9558 27 27 20.9558 27 13.5C27 6.04416 20.9558 0 13.5 0C6.04416 0 0 6.04416 0 13.5C0 20.9558 6.04416 27 13.5 27Z" fill="#E05D5D" />
+              <SVGPath content="M13.4974 6C13.1003 6 12.7194 6.15776 12.4386 6.43858C12.1578 6.71941 12 7.10028 12 7.49742V13.4871C12 13.8842 12.1578 14.2651 12.4386 14.5459C12.7194 14.8268 13.1003 14.9845 13.4974 14.9845C13.8946 14.9845 14.2755 14.8268 14.5563 14.5459C14.8371 14.2651 14.9949 13.8842 14.9949 13.4871V7.49742C14.9949 7.10028 14.8371 6.71941 14.5563 6.43858C14.2755 6.15776 13.8946 6 13.4974 6ZM14.8751 18.9078C14.8423 18.8123 14.797 18.7217 14.7403 18.6382L14.5606 18.4136C14.35 18.2058 14.0826 18.0651 13.7922 18.0091C13.5017 17.9532 13.2011 17.9845 12.9284 18.0992C12.747 18.175 12.5798 18.2813 12.4343 18.4136C12.2955 18.5535 12.1857 18.7195 12.1112 18.9019C12.0367 19.0844 11.9989 19.2797 12 19.4768C12.0024 19.6725 12.0431 19.8658 12.1198 20.0458C12.1871 20.2316 12.2944 20.4004 12.4341 20.5401C12.5738 20.6799 12.7426 20.7872 12.9284 20.8544C13.1077 20.9336 13.3015 20.9746 13.4974 20.9746C13.6934 20.9746 13.8872 20.9336 14.0665 20.8544C14.2523 20.7872 14.421 20.6799 14.5608 20.5401C14.7005 20.4004 14.8078 20.2316 14.8751 20.0458C14.9518 19.8658 14.9925 19.6725 14.9949 19.4768C15.0022 19.3771 15.0022 19.277 14.9949 19.1773C14.9691 19.0818 14.9287 18.9909 14.8751 18.9078Z" fill="white" />
+         </children>
+      </StackPane>
+      <Text fx:id="message" fill="#ac5050" strokeType="OUTSIDE" strokeWidth="0.0" text="error message">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+    </children>
+</HBox>

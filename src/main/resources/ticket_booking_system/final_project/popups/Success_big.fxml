@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="381.0" spacing="5.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.25), 30, 0, 0, 0);" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <StackPane prefHeight="150.0" prefWidth="27.0">
+            <children>
+                <SVGPath content="M14 28C21.7324 28 28 21.7319 28 14C28 6.26807 21.7324 0 14 0C6.26758 0 0 6.26807 0 14C0 21.7319 6.26758 28 14 28Z" fill="#7FE05D" />
+                <SVGPath content="M20.7319 8.2958C20.639 8.20207 20.5284 8.12768 20.4065 8.07691C20.2846 8.02614 20.1539 8 20.0219 8C19.8899 8 19.7592 8.02614 19.6373 8.07691C19.5155 8.12768 19.4049 8.20207 19.3119 8.2958L11.8619 15.7558L8.73192 12.6158C8.6354 12.5226 8.52146 12.4492 8.3966 12.4C8.27175 12.3508 8.13843 12.3267 8.00424 12.329C7.87006 12.3314 7.73765 12.3601 7.61458 12.4136C7.4915 12.4671 7.38016 12.5443 7.28692 12.6408C7.19368 12.7373 7.12037 12.8513 7.07117 12.9761C7.02196 13.101 6.99783 13.2343 7.00015 13.3685C7.00247 13.5027 7.0312 13.6351 7.0847 13.7581C7.13819 13.8812 7.2154 13.9926 7.31192 14.0858L11.1519 17.9258C11.2449 18.0195 11.3555 18.0939 11.4773 18.1447C11.5992 18.1955 11.7299 18.2216 11.8619 18.2216C11.9939 18.2216 12.1246 18.1955 12.2465 18.1447C12.3684 18.0939 12.479 18.0195 12.5719 17.9258L20.7319 9.7658C20.8334 9.67216 20.9144 9.5585 20.9698 9.432C21.0252 9.30551 21.0539 9.1689 21.0539 9.0308C21.0539 8.8927 21.0252 8.75609 20.9698 8.62959C20.9144 8.50309 20.8334 8.38944 20.7319 8.2958V8.2958Z" fill="white" />
+            </children>
+        </StackPane>
+        <Text fx:id="message" fill="#68ac50" strokeType="OUTSIDE" strokeWidth="0.0" text="success message">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+    </children>
+</HBox>

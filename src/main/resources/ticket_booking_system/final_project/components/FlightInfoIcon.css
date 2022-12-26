@@ -1,0 +1,11 @@
+.blacktext {
+    -fx-font-size: 32;
+    -fx-text-fill: "#000000";
+}
+.orangetext {
+    -fx-font-size: 32;
+    -fx-text-fill: "#CC9300";
+}
+.svg-shape-1 {
+    -fx-fill: linear-gradient(to bottom left, #FFD770 8.41%, #FF9E87 49.44%);
+}

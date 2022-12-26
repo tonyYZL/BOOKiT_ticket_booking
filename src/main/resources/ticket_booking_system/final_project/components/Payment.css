@@ -1,0 +1,10 @@
+.gray-bg {
+    -fx-background-color: "#C4C4C4";
+    -fx-background-radius: 50;
+
+}
+
+.green-bg {
+    -fx-background-color: "#7fe05d";
+    -fx-background-radius: 50;
+}

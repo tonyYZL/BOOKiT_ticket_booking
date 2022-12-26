@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="242.0" prefWidth="903.0" stylesheets="@ChosenFlightInfo.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="ticket_booking_system.final_project.ChosenFlightInfoController">
+   <children>
+      <Pane prefHeight="222.0" prefWidth="903.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.08), 30, 0, 0, 0);">
+         <children>
+            <Pane prefHeight="71.0" prefWidth="903.0" style="-fx-background-color: linear-gradient(to right,#ffd770,#FF9D87); -fx-background-radius: 20 20 0 0;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.07999999821186066" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <HBox alignment="CENTER" layoutX="43.0" layoutY="18.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="departure" text="出發地" textFill="WHITE">
+                           <font>
+                              <Font name="Apple SD Gothic Neo Regular" size="32.0" />
+                           </font>
+                        </Label>
+                        <SVGPath content="M55.7071 8.70711C56.0976 8.31658 56.0976 7.68342 55.7071 7.29289L49.3431 0.928932C48.9526 0.538408 48.3195 0.538408 47.9289 0.928932C47.5384 1.31946 47.5384 1.95262 47.9289 2.34315L53.5858 8L47.9289 13.6569C47.5384 14.0474 47.5384 14.6805 47.9289 15.0711C48.3195 15.4616 48.9526 15.4616 49.3431 15.0711L55.7071 8.70711ZM0 9H55V7H0L0 9Z" fill="white" />
+                        <Label fx:id="destination" text="目的地" textFill="WHITE">
+                           <font>
+                              <Font name="Apple SD Gothic Neo Regular" size="32.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label fx:id="date" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="641.0" layoutY="21.0" prefHeight="29.0" prefWidth="221.0" text="0000年00月00日" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="Apple SD Gothic Neo Regular" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label fx:id="flight" text="航空公司" translateX="113.0" translateY="113.0">
+               <font>
+                  <Font name="Apple SD Gothic Neo Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="flightNo" text="XXXXXX" textFill="#8e8e8e" translateX="113.0" translateY="147.0">
+               <font>
+                  <Font name="Apple SD Gothic Neo Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="departtime" layoutY="-9.0" prefHeight="39.0" text="00:00" translateX="334.0" translateY="121.0">
+               <font>
+                  <Font name="Apple SD Gothic Neo Regular" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="arrivetime" layoutY="-9.0" prefHeight="39.0" text="00:00" translateX="591.0" translateY="121.0">
+               <font>
+                  <Font name="Apple SD Gothic Neo Regular" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="departure_abbr" layoutY="-4.0" text="XXX" translateX="334.0" translateY="157.0">
+               <font>
+                  <Font name="Apple SD Gothic Neo Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="destination_abbr" layoutX="-11.0" layoutY="-4.0" text="XXX" translateX="602.0" translateY="157.0">
+               <font>
+                  <Font name="Apple SD Gothic Neo Regular" size="20.0" />
+               </font>
+            </Label>
+            <SVGPath content="M156.707 8.70711C157.098 8.31658 157.098 7.68342 156.707 7.29289L150.343 0.928932C149.953 0.538408 149.319 0.538408 148.929 0.928932C148.538 1.31946 148.538 1.95262 148.929 2.34315L154.586 8L148.929 13.6569C148.538 14.0474 148.538 14.6805 148.929 15.0711C149.319 15.4616 149.953 15.4616 150.343 15.0711L156.707 8.70711ZM0 9H156V7H0L0 9Z" fill="black" layoutY="-9.0" translateX="427.0" translateY="135.0" />
+            <Pane onMouseClicked="#OnPaneClick" prefHeight="48.0" prefWidth="128.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #c4c4c4; -fx-border-radius: 10; -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.08), 30, 0, 0, 0); -fx-border-width: 0.5;" translateX="735.0" translateY="90.0">
+               <children>
+                  <SVGPath fx:id="ICON" content="M10.2458 0.290792C10.0584 0.104542 9.80498 0 9.5408 0C9.27661 0 9.02316 0.104542 8.8358 0.290792L5.2458 3.83079L1.7058 0.290792C1.51844 0.104542 1.26498 0 1.0008 0C0.736612 0 0.483161 0.104542 0.295798 0.290792C0.20207 0.383755 0.127675 0.494356 0.0769067 0.616216C0.026138 0.738075 0 0.868781 0 1.00079C0 1.1328 0.026138 1.26351 0.0769067 1.38537C0.127675 1.50723 0.20207 1.61783 0.295798 1.71079L4.5358 5.95079C4.62876 6.04452 4.73936 6.11891 4.86122 6.16968C4.98308 6.22045 5.11379 6.24659 5.2458 6.24659C5.37781 6.24659 5.50852 6.22045 5.63037 6.16968C5.75223 6.11891 5.86284 6.04452 5.9558 5.95079L10.2458 1.71079C10.3395 1.61783 10.4139 1.50723 10.4647 1.38537C10.5155 1.26351 10.5416 1.1328 10.5416 1.00079C10.5416 0.868781 10.5155 0.738075 10.4647 0.616216C10.4139 0.494356 10.3395 0.383755 10.2458 0.290792Z" fill="black" layoutX="-2.0" layoutY="1.0" translateX="108.0" translateY="21.0" />
+                  <Label fx:id="flightLevel" text="艙等" textFill="#8e8e8e" translateX="19.0" translateY="12.0">
+                     <font>
+                        <Font name="Apple SD Gothic Neo Regular" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <HBox alignment="CENTER" layoutX="427.0" layoutY="157.0" prefWidth="150.0">
+               <children>
+                  <HBox alignment="CENTER" spacing="5.0">
+                     <children>
+                        <SVGPath content="M8.27832 0C6.69607 0 5.14935 0.469192 3.83376 1.34824C2.51817 2.22729 1.49279 3.47672 0.887288 4.93853C0.281787 6.40034 0.12336 8.00887 0.432042 9.56072C0.740723 11.1126 1.50265 12.538 2.62147 13.6569C3.74029 14.7757 5.16575 15.5376 6.7176 15.8463C8.26945 16.155 9.87798 15.9965 11.3398 15.391C12.8016 14.7855 14.051 13.7602 14.9301 12.4446C15.8091 11.129 16.2783 9.58225 16.2783 8C16.2783 6.94942 16.0714 5.90914 15.6694 4.93853C15.2673 3.96793 14.678 3.08601 13.9352 2.34315C13.1923 1.60028 12.3104 1.011 11.3398 0.608964C10.3692 0.206926 9.3289 0 8.27832 0ZM8.27832 14.4C7.01252 14.4 5.77515 14.0246 4.72267 13.3214C3.6702 12.6182 2.8499 11.6186 2.36549 10.4492C1.88109 9.27972 1.75435 7.9929 2.0013 6.75142C2.24824 5.50994 2.85778 4.36957 3.75284 3.47452C4.6479 2.57946 5.78827 1.96992 7.02974 1.72297C8.27122 1.47603 9.55805 1.60277 10.7275 2.08717C11.8969 2.57157 12.8965 3.39187 13.5997 4.44435C14.303 5.49682 14.6783 6.7342 14.6783 8C14.6783 9.69738 14.004 11.3252 12.8038 12.5255C11.6036 13.7257 9.97571 14.4 8.27832 14.4ZM10.7583 8.504L9.07832 7.536V4C9.07832 3.78783 8.99404 3.58434 8.84401 3.43431C8.69398 3.28428 8.4905 3.2 8.27832 3.2C8.06615 3.2 7.86267 3.28428 7.71264 3.43431C7.56261 3.58434 7.47832 3.78783 7.47832 4V8C7.47832 8 7.47832 8.064 7.47832 8.096C7.48306 8.15112 7.49656 8.20513 7.51832 8.256C7.5348 8.30346 7.55625 8.34905 7.58232 8.392C7.60421 8.43747 7.63104 8.48039 7.66232 8.52L7.79032 8.624L7.86232 8.696L9.94232 9.896C10.0642 9.9651 10.2022 10.001 10.3423 10C10.5195 10.0012 10.692 9.94365 10.8329 9.83627C10.9738 9.72889 11.075 9.57779 11.1208 9.40666C11.1665 9.23554 11.1542 9.05406 11.0857 8.8907C11.0172 8.72734 10.8964 8.59133 10.7423 8.504H10.7583Z" fill="#8E8E8E" />
+                        <Label fx:id="costtime" text="00小時00分鐘" textFill="#8e8e8e">
+                           <font>
+                              <Font name="Apple SD Gothic Neo Regular" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <Pane fx:id="quantity" prefHeight="48.0" prefWidth="128.0" style="-fx-background-color: WHITE; -fx-background-radius: 10; -fx-border-radius: 10; -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.08), 30, 0, 0, 0);" translateX="735.0" translateY="153.0" visible="false">
+               <children>
+                  <Pane onMouseClicked="#OnAddClick" prefHeight="48.0" prefWidth="41.0" style="-fx-background-color: white; -fx-border-color: #c4c4c4; -fx-background-radius: 0 10 10 0; -fx-border-radius: 0 10 10 0; -fx-border-width: 0.5 0.5 0.5 0;" translateX="87.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="24.0" prefWidth="41.0" text="+" translateY="12.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="48.0" prefWidth="46.0" style="-fx-background-color: white; -fx-border-color: #c4c4c4; -fx-border-width: 0.5;" translateX="41.0">
+                     <children>
+                        <Label fx:id="quantity_label" alignment="CENTER" prefHeight="24.0" prefWidth="46.0" text="1" translateY="12.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane onMouseClicked="#OnMinusClick" prefHeight="48.0" prefWidth="41.0" style="-fx-background-color: white; -fx-border-color: #c4c4c4; -fx-border-width: 0.5 0 0.5 0.5; -fx-background-radius: 10 0 0 10; -fx-border-radius: 10 0 0 10;">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="24.0" prefWidth="41.0" text="-" translateY="12.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="leveloption" prefHeight="162.0" prefWidth="173.0" style="-fx-background-color: white; -fx-background-radius: 10;" translateX="690.0" translateY="160.0" visible="false">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.25" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <Label fx:id="firstClassBtn" alignment="CENTER" onMouseClicked="#firstclassClick" prefHeight="24.0" prefWidth="173.0" styleClass="flightlevel" text="頭等艙" translateY="115.0">
+                     <font>
+                        <Font name="Apple SD Gothic Neo Regular" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="businessClassBtn" alignment="CENTER" onMouseClicked="#businessclassClick" prefHeight="24.0" prefWidth="173.0" styleClass="flightlevel" text="商務艙" translateY="69.0">
+                     <font>
+                        <Font name="Apple SD Gothic Neo Regular" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" onMouseClicked="#economicclassClick" prefHeight="24.0" prefWidth="173.0" styleClass="flightlevel" text="經濟艙" translateY="23.0">
+                     <font>
+                        <Font name="Apple SD Gothic Neo Regular" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <HBox fx:id="iconPane" alignment="CENTER" prefHeight="69.0" prefWidth="68.0" translateX="32.0" translateY="104.0" />
+   </children>
+</Pane>

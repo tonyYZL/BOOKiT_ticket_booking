@@ -1,0 +1,36 @@
+.title-text {
+    -fx-font-size: 24;
+    -fx-fill: "#CC9300";
+}
+
+.svg-shape {
+    -fx-fill: linear-gradient(to bottom left, #FFD770, #FF9E87);
+}
+
+.container {
+    -fx-background-color: "#FFFFFF";
+    -fx-background-radius: 20;
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.08), 30, 0, 0, 0);
+}
+
+.text-20 {
+    -fx-font-size: 20;
+}
+
+.text-32 {
+    -fx-font-size: 32;
+}
+
+.time-text {
+    -fx-font-size: 16;
+    -fx-text-fill: "#CC9300";
+}
+
+.search-btn {
+    -fx-font-size: 20;
+    -fx-fill: "#CC9300";
+}
+
+.search-btn:hover {
+    -fx-fill: "#ECBC41";
+}

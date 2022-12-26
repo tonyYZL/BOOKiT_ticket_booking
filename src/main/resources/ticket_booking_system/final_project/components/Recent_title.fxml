@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="903.0" stylesheets="@RecentlyBooked.css" xmlns="http://javafx.com/javafx">
+   <children>
+      <Text layoutX="40.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-text" text="最近預定的航班" />
+      <SVGPath content="M39.2424 36.5101C74.7889 43.9118 118.316 52.9754 95.1337 16.2296C69.7281 -24.0397 174.919 19.222 214 53H12.5985C10.5813 50.2275 8.1124 47.0912 4.97459 43.5358C-10.3373 26.1863 12.1313 30.8649 39.2424 36.5101Z" layoutX="665.0" layoutY="22.0" styleClass="svg-shape" />
+   </children>
+</Pane>

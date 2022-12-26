@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import java.util.ArrayList?>
+<Pane fx:id="outerView" stylesheets="@HomeScreen.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="984.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="ticket_booking_system.final_project.HomeController">
+   <children>
+      <VBox fx:id="homeScreen" alignment="TOP_CENTER" prefHeight="720.0" prefWidth="984.0" style="-fx-background-color: white;">
+         <padding>
+            <Insets top="18.0" />
+         </padding>
+         <children>
+            <HBox fx:id="allRecordBtn" alignment="CENTER_RIGHT" maxWidth="863.0" prefHeight="30.0" prefWidth="863.0">
+               <children>
+                  <HBox styleClass="all-record-btn" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0" onMouseClicked="#goToRecordScreen">
+                     <children>
+                        <Text styleClass="btn-hover" fill="#cc9300" strokeType="OUTSIDE" strokeWidth="0.0" text="查看所有紀錄">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <SVGPath styleClass="btn-hover" content="M8.57382 6.48848L2.46489 0.423141C2.33095 0.289062 2.17159 0.18264 1.99602 0.110015C1.82045 0.0373905 1.63213 0 1.44193 0C1.25173 0 1.06341 0.0373905 0.887835 0.110015C0.712262 0.18264 0.552909 0.289062 0.41897 0.423141C0.150622 0.691163 0 1.05373 0 1.43165C0 1.80956 0.150622 2.17213 0.41897 2.44015L5.51935 7.50414L0.41897 12.5681C0.150622 12.8361 0 13.1987 0 13.5766C0 13.9545 0.150622 14.3171 0.41897 14.5851C0.553597 14.7177 0.713259 14.8226 0.888801 14.8938C1.06434 14.965 1.25231 15.0011 1.44193 15C1.63154 15.0011 1.81951 14.965 1.99505 14.8938C2.1706 14.8226 2.33026 14.7177 2.46489 14.5851L8.57382 8.51979C8.70886 8.38681 8.81605 8.22859 8.88919 8.05427C8.96234 7.87995 9 7.69298 9 7.50414C9 7.31529 8.96234 7.12832 8.88919 6.954C8.81605 6.77968 8.70886 6.62146 8.57382 6.48848Z" fill="#CC9300" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Pane fx:id="modal" prefHeight="720.0" prefWidth="984.0" styleClass="modal-scene" visible="false">
+         <children>
+            <Pane layoutX="234.0" layoutY="197.0" prefHeight="327.0" prefWidth="517.0" styleClass="input-card">
+               <children>
+                  <Text layoutX="29.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="gray-text-20" text="卡號" />
+                  <Text layoutX="29.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="gray-text-20" text="有效期限" />
+                  <Text layoutX="395.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="gray-text-20" text="末三碼" />
+                  <Label layoutX="347.0" layoutY="259.0" onMouseClicked="#closeModal" styleClass="cancel-btn" text="取消">
+                     <padding>
+                        <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="432.0" layoutY="259.0" onMouseClicked="#addCardCheck" styleClass="add-btn" text="新增">
+                     <padding>
+                        <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="cardNumber_1" alignment="CENTER" layoutX="29.0" layoutY="57.0" onKeyTyped="#checkLength4" prefHeight="58.0" prefWidth="92.0" styleClass="input-box" />
+                  <TextField fx:id="cardNumber_2" alignment="CENTER" layoutX="151.0" layoutY="57.0" onKeyTyped="#checkLength4" prefHeight="58.0" prefWidth="92.0" styleClass="input-box" />
+                  <TextField fx:id="cardNumber_3" alignment="CENTER" layoutX="273.0" layoutY="57.0" onKeyTyped="#checkLength4" prefHeight="58.0" prefWidth="92.0" styleClass="input-box" />
+                  <TextField fx:id="cardNumber_4" alignment="CENTER" layoutX="395.0" layoutY="57.0" onKeyTyped="#checkLength4" prefHeight="58.0" prefWidth="92.0" styleClass="input-box" />
+                  <fx:define>
+                     <ArrayList fx:id="cardNumberList">
+                        <fx:reference source="cardNumber_1" />
+                        <fx:reference source="cardNumber_2" />
+                        <fx:reference source="cardNumber_3" />
+                        <fx:reference source="cardNumber_4" />
+                     </ArrayList>
+                  </fx:define>
+
+                  <TextField fx:id="expireDate_1" alignment="CENTER" layoutX="29.0" layoutY="175.0" onKeyTyped="#checkLength2" prefHeight="58.0" prefWidth="92.0" promptText="MM" styleClass="input-box" />
+                  <TextField fx:id="expireDate_2" alignment="CENTER" layoutX="151.0" layoutY="175.0" onKeyTyped="#checkLength2" prefHeight="58.0" prefWidth="92.0" promptText="YY" styleClass="input-box" />
+                  <fx:define>
+                     <ArrayList fx:id="expireDateList">
+                        <fx:reference source="expireDate_1" />
+                        <fx:reference source="expireDate_2" />
+                     </ArrayList>
+                  </fx:define>
+
+                  <TextField fx:id="securityCode" alignment="CENTER" layoutX="395.0" layoutY="175.0" onKeyTyped="#checkLength3" prefHeight="58.0" prefWidth="92.0" styleClass="input-box" />
+                  <Text layoutX="131.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="black-text-20" text="-" />
+                  <Text layoutX="253.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="black-text-20" text="-" />
+                  <Text layoutX="375.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="black-text-20" text="-" />
+                  <Text layoutX="131.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="black-text-20" text="/" />
+               </children>
+
+            </Pane>
+         </children></Pane>
+   </children>
+
+</Pane>

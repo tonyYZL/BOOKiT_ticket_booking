@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="outerView" prefHeight="720.0" prefWidth="984.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="ticket_booking_system.final_project.BookingController">
+    <children>
+        <ScrollPane hbarPolicy="NEVER" prefHeight="720.0" prefWidth="984.0" style="-fx-background-color: white;" vbarPolicy="NEVER">
+         <content>
+            <VBox fx:id="vBox" alignment="TOP_CENTER" minHeight="720.0" prefWidth="984.0" style="-fx-background-color: white;">
+               <padding>
+                  <Insets bottom="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <Pane fx:id="pricelabel" prefWidth="903.0" visible="false">
+                     <children>
+                        <Label layoutX="108.0" layoutY="91.0" text="乘客數">
+                           <font>
+                              <Font name="Apple SD Gothic Neo Regular" size="20.0" />
+                           </font>
+                        </Label>
+                        <Line endX="868.2929077148438" endY="30.0" fill="#c4c4c4" startX="108.0" startY="30.0" stroke="#c4c4c4" />
+                        <Label fx:id="seatClassText" layoutX="108.0" layoutY="48.0" text="經濟艙">
+                           <font>
+                              <Font name="Apple SD Gothic Neo Regular" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="163.0" layoutY="48.0" text="（成人）票價（含稅）">
+                           <font>
+                              <Font name="Apple SD Gothic Neo Regular" size="20.0" />
+                           </font>
+                        </Label>
+                        <Line endX="868.2929077148438" endY="134.0" fill="#c4c4c4" startX="108.0" startY="134.0" stroke="#c4c4c4" />
+                        <Label layoutX="108.0" layoutY="156.0" text="總額">
+                           <font>
+                              <Font name="Apple SD Gothic Neo Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="unitprice" alignment="CENTER_RIGHT" layoutX="669.0" layoutY="48.0" prefWidth="200.0" text="NT$0" textFill="#8e8e8e">
+                           <font>
+                              <Font name="Apple SD Gothic Neo Regular" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="number" alignment="CENTER_RIGHT" layoutX="789.0" layoutY="91.0" prefWidth="80.0" text="1人" textFill="#8e8e8e">
+                           <font>
+                              <Font name="Apple SD Gothic Neo Regular" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="total" alignment="CENTER_RIGHT" layoutX="619.0" layoutY="144.0" prefWidth="250.0" text="NT$0" textFill="#cc9300">
+                           <font>
+                              <Font name="Apple SD Gothic Neo Regular" size="32.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="40.0" top="10.0" />
+                     </padding>
+                  </Pane>
+                  <Button fx:id="finishbutton" mnemonicParsing="false" onMouseClicked="#checkOrder" prefHeight="48.0" prefWidth="229.0" style="-fx-background-color: linear-gradient(to left, #FFa386 , #FFb87d); -fx-background-radius: 5; -fx-effect: dropShadow(three-pass-box, #FFA28660, 20, 0, 0, 5);" text="完成訂單" textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="Apple SD Gothic Neo Regular" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </Button>
+               </children></VBox>
+         </content>
+        </ScrollPane>
+    </children>
+</Pane>

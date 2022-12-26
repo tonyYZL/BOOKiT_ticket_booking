@@ -1,0 +1,48 @@
+.modal-scene {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+}
+
+.input-card {
+    -fx-background-color: "#FFFFFF";
+    -fx-background-radius: 20;
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.08), 30, 0, 0, 0);
+}
+
+.gray-text-20 {
+    -fx-font-size: 20;
+    -fx-fill: "#8E8E8E";
+    -fx-text-fill: "#8E8E8E";
+}
+
+.black-text-20 {
+    -fx-font-size: 20;
+}
+
+.cancel-btn {
+    -fx-font-size: 20;
+    -fx-text-fill: "#8E8E8E";
+}
+.cancel-btn:hover {
+    -fx-text-fill: "#000000";
+}
+
+.add-btn {
+    -fx-font-size: 20;
+    -fx-text-fill: "#CC9300";
+}
+.add-btn:hover {
+    -fx-text-fill: "#FFD770"
+}
+
+.input-box {
+    -fx-background-color: "#FFFFFF";
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: "#C4C4C4";
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.08), 30, 0, 0, 0);
+    -fx-font-size: 20;
+}
+
+.all-record-btn:hover .btn-hover {
+    -fx-fill: "#ECBC41";
+}

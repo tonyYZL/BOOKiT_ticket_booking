@@ -1,0 +1,83 @@
+.container {
+    -fx-background-color: "#FFFFFF";
+}
+
+.svg-shape-1 {
+    -fx-fill: linear-gradient(to bottom, #FFD770, #FFA1A1);
+    -fx-opacity: 0.8;
+}
+
+.svg-shape-2 {
+    -fx-fill: linear-gradient(to bottom, #FFD770, #FFA1A1);
+    -fx-opacity: 0.3;
+}
+
+.svg-airplane {
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.08), 10, 0, 0, 4);
+}
+
+.logo {
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.1), 20, 0, 0, 0);
+}
+
+.exit-btn:hover .exit-btn-icon {
+    -fx-fill: black;
+}
+
+.toggle-bg-drop-shadow {
+    -fx-background-color: "#FFFFFF";
+    -fx-background-radius: 50;
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.06), 20, 0, 10, 10);
+}
+
+.toggle-bg-inner-shadow {
+    -fx-background-color: "#FFFFFF";
+    -fx-background-radius: 50;
+    -fx-effect: innerShadow(three-pass-box, rgba(0, 0, 0, 0.05), 6, 0, 1, 1);
+}
+
+.toggle-btn {
+    -fx-background-radius: 50;
+}
+
+.toggle-btn:hover .font {
+    -fx-fill: #000000;
+}
+
+.font {
+    -fx-fill: #C4C4C4;
+    -fx-font-size: 20;
+}
+
+.selected-font {
+    -fx-font-size: 20;
+    -fx-fill: linear-gradient(to right, #FFB800, #FF0000);
+}
+
+.box-bg-drop-shadow {
+    -fx-background-color: "#FFF6DD";
+    -fx-background-radius: 10;
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.06), 20, 0, 10, 10);
+}
+
+.box-bg-inner-shadow {
+    -fx-background-color: "#FFF6DD";
+    -fx-background-radius: 10;
+    -fx-effect: innerShadow(three-pass-box, rgba(0, 0, 0, 0.05), 6, 0, 1, 1);
+}
+
+.box {
+    -fx-background-color: transparent;
+    -fx-font-size: 16;
+    -fx-prompt-text-fill: "#C4C4C4";
+    -fx-focus-traversable: "false";
+}
+
+.login-btn {
+    -fx-text-fill: "#FFFFFF";
+    -fx-font-size: 20;
+    -fx-background-radius: 10;
+    -fx-background-color: linear-gradient(to bottom right, #FFD572, #FFA3A1);
+    -fx-effect: dropShadow(three-pass-box, rgba(255, 215, 112, 0.6), 20, 0, 0, 5);
+}
+

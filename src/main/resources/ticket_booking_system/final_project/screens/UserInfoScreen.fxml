@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="outerView" cache="true" prefHeight="720.0" prefWidth="984.0" style="-fx-background-color: white;" stylesheets="@UserInfoScreen.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="ticket_booking_system.final_project.UserInfoController">
+    <children>
+        <ScrollPane hbarPolicy="NEVER" prefHeight="720.0" prefWidth="984.0" style="-fx-background-color: white;" vbarPolicy="NEVER">
+         <content>
+            <VBox fx:id="userInfoScreen" alignment="TOP_CENTER" prefWidth="984.0" spacing="15.0">
+               <padding>
+                  <Insets bottom="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </content>
+        </ScrollPane>
+            <Pane fx:id="modal" prefHeight="720.0" prefWidth="984.0" styleClass="modal-scene" visible="false">
+               <children>
+                  <Pane layoutX="297.0" layoutY="146.0" prefHeight="428.0" prefWidth="391.0" styleClass="input-card">
+                     <children>
+                        <Text layoutX="36.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="gray-text-20" text="舊密碼" />
+                        <Text layoutX="36.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="gray-text-20" text="新密碼" />
+                        <Label layoutX="188.0" layoutY="372.0" onMouseClicked="#closeModal" styleClass="cancel-btn" text="取消">
+                           <padding>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutX="273.0" layoutY="372.0" onMouseClicked="#changePasswordCheck" styleClass="add-btn" text="確定變更">
+                           <padding>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                           </padding>
+                        </Label>
+                        <PasswordField fx:id="oldPassword" layoutX="36.0" layoutY="59.0" prefHeight="58.0" prefWidth="316.0" styleClass="input-box" />
+                        <Text layoutX="36.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="gray-text-20" text="再輸一次新密碼" />
+                        <PasswordField fx:id="newPassword" layoutX="36.0" layoutY="169.0" prefHeight="58.0" prefWidth="316.0" styleClass="input-box" />
+                        <PasswordField fx:id="againNewPassword" layoutX="36.0" layoutY="279.0" prefHeight="58.0" prefWidth="316.0" styleClass="input-box" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+    </children>
+</Pane>

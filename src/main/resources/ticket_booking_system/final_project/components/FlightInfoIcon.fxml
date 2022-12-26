@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="titlePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="903.0" stylesheets="@FlightInfoIcon.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="ticket_booking_system.final_project.FlightInfoTitleController">
+   <children>
+       <SVGPath content="M39.2424 36.5101C74.7889 43.9118 118.316 52.9754 95.1337 16.2296C69.7281 -24.0397 174.919 19.222 214 53H12.5985C10.5813 50.2275 8.1124 47.0912 4.97459 43.5358C-10.3373 26.1863 12.1313 30.8649 39.2424 36.5101Z" layoutX="625.0" styleClass="svg-shape-1" />
+      <HBox layoutX="32.0" prefHeight="53.0" prefWidth="839.0" spacing="10.0">
+         <children>
+            <Label styleClass="blacktext" text="從">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="departureText" styleClass="orangetext" text="出發地">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label styleClass="blacktext" text="到">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="arriveText" styleClass="orangetext" text="目的地">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label styleClass="blacktext" text="的所有航班">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</Pane>

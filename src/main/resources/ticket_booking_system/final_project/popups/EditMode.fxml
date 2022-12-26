@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="381.0" spacing="37.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.25), 30, 0, 0, 0);" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="ticket_booking_system.final_project.EditModeController">
+    <children>
+        <Text fx:id="message" strokeType="OUTSIDE" strokeWidth="0.0" text="編輯模式">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+      <HBox alignment="CENTER" prefHeight="100.0" spacing="26.0">
+         <children>
+            <Label onMouseClicked="#closeEditMode" text="取消" textFill="#8e8e8e">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label onMouseClicked="#saveEdit" text="儲存" textFill="#cc9300">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+    </children>
+</HBox>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="225.0" spacing="5.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.08), 30, 0, 0, 0);" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <StackPane prefHeight="150.0" prefWidth="27.0">
+            <children>
+                <SVGPath content="M6 14C11.5228 14 16 9.52285 16 4C16 -1.52285 11.5228 -6 6 -6C0.477152 -6 -4 -1.52285 -4 4C-4 9.52285 0.477152 14 6 14Z" fill="#7FE05D"/>
+                <SVGPath content="M11.7251 0.231509C11.6457 0.158151 11.5513 0.099926 11.4472 0.0601915C11.3432 0.0204571 11.2316 0 11.1189 0C11.0062 0 10.8946 0.0204571 10.7905 0.0601915C10.6865 0.099926 10.592 0.158151 10.5126 0.231509L4.15139 6.07013L1.47882 3.61259C1.3964 3.53961 1.29911 3.48223 1.1925 3.44372C1.08589 3.40521 0.972054 3.38633 0.857483 3.38814C0.742911 3.38996 0.629852 3.41244 0.524761 3.45431C0.419669 3.49618 0.324603 3.55661 0.244991 3.63215C0.165378 3.7077 0.102779 3.79687 0.0607656 3.89459C0.0187524 3.99231 -0.00185163 4.09666 0.000130571 4.20167C0.00211277 4.30669 0.0266423 4.41032 0.0723181 4.50665C0.117994 4.60298 0.183922 4.69012 0.266338 4.76309L3.54515 7.76849C3.62453 7.84185 3.71897 7.90007 3.82302 7.93981C3.92707 7.97954 4.03867 8 4.15139 8C4.26411 8 4.37572 7.97954 4.47977 7.93981C4.58382 7.90007 4.67825 7.84185 4.75763 7.76849L11.7251 1.38201C11.8118 1.30872 11.881 1.21977 11.9283 1.12077C11.9756 1.02176 12 0.914848 12 0.806761C12 0.698675 11.9756 0.59176 11.9283 0.492754C11.881 0.393749 11.8118 0.304798 11.7251 0.231509V0.231509Z" fill="white"/>
+            </children>
+        </StackPane>
+        <Text fx:id="message" fill="#68ac50" strokeType="OUTSIDE" strokeWidth="0.0" text="success message">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+    </children>
+</HBox>

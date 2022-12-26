@@ -1,0 +1,81 @@
+.container {
+    -fx-background-color: "#FFFFFF";
+    -fx-background-radius: 20;
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.08), 30, 0, 0, 0);
+}
+
+.gradient-bar {
+    -fx-background-radius: 20 20 0 0;
+    -fx-background-color: linear-gradient(to right, #FFD770, #FF9D87);
+}
+
+.title-text {
+    -fx-font-size: 24;
+    -fx-fill: "#FFFFFF";
+}
+
+.input-box {
+    -fx-background-color: "#FFFFFF";
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-width: 1;
+    -fx-border-color: "#C4C4C4";
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.08), 30, 0, 0, 0);
+    -fx-font-size: 20;
+    -fx-focus-traversable: "false";
+}
+
+.text {
+    -fx-font-size: 20;
+    -fx-fill: "#8E8E8E";
+}
+
+.add-text {
+    -fx-fill: "#CC9300";
+    -fx-font-size: 20;
+}
+
+.add-btn:hover .add-text,
+.add-btn:hover .add-icon{
+    -fx-fill: "#ECBC41";
+}
+
+
+
+.change-pass-btn:hover .btn-text {
+    -fx-fill: "#ECBC41";
+}
+
+.gray-text-20 {
+    -fx-font-size: 20;
+    -fx-fill: "#8E8E8E";
+    -fx-text-fill: "#8E8E8E";
+}
+
+.black-text-20 {
+    -fx-font-size: 20;
+}
+
+.gradient-card {
+    -fx-fill: linear-gradient(to bottom left, #5E5E5E, #2E2E2E);
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.25), 20, 0, 4, 4);
+}
+
+.delete-text {
+    -fx-fill: "#E05D5D";
+    -fx-font-size: 20;
+}
+
+.text-16 {
+    -fx-font-size: 16;
+    -fx-fill: "#FFFFFF";
+}
+
+.text-12 {
+    -fx-font-size: 12;
+    -fx-fill: "#FFFFFF";
+}
+
+.disabled-input {
+    -fx-background-color: "#EEEEEE";
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="903.0" xmlns="http://javafx.com/javafx">
+   <children>
+      <SVGPath content="M39.2424 36.5101C74.7889 43.9118 118.316 52.9754 95.1337 16.2296C69.7281 -24.0397 174.919 19.222 214 53H12.5985C10.5813 50.2275 8.1124 47.0912 4.97459 43.5358C-10.3373 26.1863 12.1313 30.8649 39.2424 36.5101Z" style="-fx-fill: linear-gradient(to bottom left, #FFD770 8.41%, #FF9E87 49.44%);};" styleClass="svg-shape-1" translateX="665.0" translateY="22.0" />
+      <Label layoutY="15.0" prefHeight="29.0" prefWidth="96.0" text="乘客名單" textFill="#cc9300" translateX="40.0" translateY="22.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

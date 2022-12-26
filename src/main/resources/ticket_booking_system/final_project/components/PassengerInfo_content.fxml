@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="115.0" prefWidth="903.0" stylesheets="@PassengerInfo_content.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="ticket_booking_system.final_project.PassengerInfoContentController">
+   <children>
+      <Pane fx:id="passengerInfoPane" prefHeight="100.0" prefWidth="903.0" style="-fx-background-color: WHITE; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.07999999821186066" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Label fx:id="passengerNo" alignment="CENTER" prefHeight="24.0" prefWidth="104.0" text="乘客" textAlignment="CENTER" translateY="37.0">
+               <font>
+                  <Font name="Apple SD Gothic Neo Regular" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lastName" onKeyTyped="#toUpper" prefHeight="58.0" prefWidth="259.0" promptText="英文姓氏（必填）" style="-fx-background-color: white; -fx-border-color: #c4c4c4; -fx-prompt-text-fill: #8e8e8e; -fx-background-radius: 10; -fx-border-radius: 10;" translateX="104.0" translateY="20.0">
+               <font>
+                  <Font name="Apple SD Gothic Neo Regular" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="firstName" onKeyTyped="#toUpper" layoutX="401.0" layoutY="20.0" prefHeight="58.0" prefWidth="259.0" promptText="英文名字（必填）" style="-fx-background-color: white; -fx-border-color: #c4c4c4; -fx-prompt-text-fill: #8e8e8e; -fx-background-radius: 10; -fx-border-radius: 10;">
+               <font>
+                  <Font name="Apple SD Gothic Neo Regular" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </TextField>
+            <Pane onMouseClicked="#OnMouseClick" prefHeight="58.0" prefWidth="181.0" style="-fx-background-color: white; -fx-border-color: #c4c4c4; -fx-background-radius: 10; -fx-border-radius: 10;" translateX="698.0" translateY="20.0">
+               <children>
+                  <Label fx:id="sexual_labal" prefHeight="24.0" prefWidth="120.0" text="性別（必填）" textFill="#8e8e8e" translateX="19.0" translateY="17.0">
+                     <font>
+                        <Font name="Apple SD Gothic Neo Regular" size="20.0" />
+                     </font>
+                  </Label>
+                  <SVGPath fx:id="icon" content="M10.2458 0.290792C10.0584 0.104542 9.80498 0 9.5408 0C9.27661 0 9.02316 0.104542 8.8358 0.290792L5.2458 3.83079L1.7058 0.290792C1.51844 0.104542 1.26498 0 1.0008 0C0.736612 0 0.483161 0.104542 0.295798 0.290792C0.20207 0.383755 0.127675 0.494356 0.0769067 0.616216C0.026138 0.738075 0 0.868781 0 1.00079C0 1.1328 0.026138 1.26351 0.0769067 1.38537C0.127675 1.50723 0.20207 1.61783 0.295798 1.71079L4.5358 5.95079C4.62876 6.04452 4.73936 6.11891 4.86122 6.16968C4.98308 6.22045 5.11379 6.24659 5.2458 6.24659C5.37781 6.24659 5.50852 6.22045 5.63037 6.16968C5.75223 6.11891 5.86284 6.04452 5.9558 5.95079L10.2458 1.71079C10.3395 1.61783 10.4139 1.50723 10.4647 1.38537C10.5155 1.26351 10.5416 1.1328 10.5416 1.00079C10.5416 0.868781 10.5155 0.738075 10.4647 0.616216C10.4139 0.494356 10.3395 0.383755 10.2458 0.290792Z" fill="black" translateX="154.0" translateY="26.0" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="sexual_pane" prefHeight="115.0" prefWidth="113.0" style="-fx-background-color: white; -fx-background-radius: 10;" translateX="698.0" translateY="90.0" visible="false">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.25" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Label fx:id="female_label" alignment="CENTER" onMouseClicked="#OnFemaleClick" prefHeight="24.0" prefWidth="113.0" styleClass="sexual" text="女" translateY="69.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="male_label" alignment="CENTER" onMouseClicked="#OnMaleClick" prefHeight="24.0" prefWidth="113.0" styleClass="sexual" text="男" translateY="24.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="209.0" prefWidth="332.0" styleClass="empty-card" stylesheets="@style.css" xmlns="http://javafx.com/javafx">
+    <children>
+      <Circle layoutX="165.0" layoutY="104.0" radius="47.5" strokeType="INSIDE" styleClass="line" />
+      <Line endX="60.0" layoutX="135.0" layoutY="104.0" styleClass="line" />
+      <Line endY="60.0" layoutX="165.0" layoutY="74.0" styleClass="line" />
+    </children>
+</Pane>

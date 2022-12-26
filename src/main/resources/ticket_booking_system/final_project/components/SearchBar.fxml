@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="266.0" prefWidth="903.0" stylesheets="@SearchBar.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="ticket_booking_system.final_project.SearchBarController">
+   <children>
+      <Pane prefHeight="217.0" prefWidth="903.0" styleClass="paneradius20">
+         <children>
+            <Pane prefHeight="108.0" prefWidth="903.0" styleClass="orangepane">
+               <children>
+                  <Pane fx:id="departure" layoutX="46.0" layoutY="30.0" onMouseClicked="#showlocation_left" prefHeight="48.0" prefWidth="189.0" styleClass="rectanglebox">
+                     <children>
+                        <Label fx:id="departure_label" layoutX="17.0" layoutY="10.0" prefHeight="27.0" prefWidth="160.0" styleClass="text" text="出發地">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <SVGPath fx:id="icon_left" content="M10.2458 0.290792C10.0584 0.104542 9.80498 0 9.5408 0C9.27661 0 9.02316 0.104542 8.8358 0.290792L5.2458 3.83079L1.7058 0.290792C1.51844 0.104542 1.26498 0 1.0008 0C0.736612 0 0.483161 0.104542 0.295798 0.290792C0.20207 0.383755 0.127675 0.494356 0.0769067 0.616216C0.026138 0.738075 0 0.868781 0 1.00079C0 1.1328 0.026138 1.26351 0.0769067 1.38537C0.127675 1.50723 0.20207 1.61783 0.295798 1.71079L4.5358 5.95079C4.62876 6.04452 4.73936 6.11891 4.86122 6.16968C4.98308 6.22045 5.11379 6.24659 5.2458 6.24659C5.37781 6.24659 5.50852 6.22045 5.63037 6.16968C5.75223 6.11891 5.86284 6.04452 5.9558 5.95079L10.2458 1.71079C10.3395 1.61783 10.4139 1.50723 10.4647 1.38537C10.5155 1.26351 10.5416 1.1328 10.5416 1.00079C10.5416 0.868781 10.5155 0.738075 10.4647 0.616216C10.4139 0.494356 10.3395 0.383755 10.2458 0.290792Z" fill="black" layoutX="164.0" layoutY="20.0" />
+                     </children></Pane>
+                  <Pane fx:id="destination" layoutX="293.0" layoutY="30.0" prefHeight="48.0" prefWidth="189.0" styleClass="rectanglebox">
+                     <children>
+                        <Label fx:id="destination_label" layoutX="17.0" layoutY="10.0" onMouseClicked="#showlocation_right" prefHeight="27.0" prefWidth="160.0" styleClass="text" text="目的地">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <SVGPath fx:id="icon_right" content="M10.2458 0.290792C10.0584 0.104542 9.80498 0 9.5408 0C9.27661 0 9.02316 0.104542 8.8358 0.290792L5.2458 3.83079L1.7058 0.290792C1.51844 0.104542 1.26498 0 1.0008 0C0.736612 0 0.483161 0.104542 0.295798 0.290792C0.20207 0.383755 0.127675 0.494356 0.0769067 0.616216C0.026138 0.738075 0 0.868781 0 1.00079C0 1.1328 0.026138 1.26351 0.0769067 1.38537C0.127675 1.50723 0.20207 1.61783 0.295798 1.71079L4.5358 5.95079C4.62876 6.04452 4.73936 6.11891 4.86122 6.16968C4.98308 6.22045 5.11379 6.24659 5.2458 6.24659C5.37781 6.24659 5.50852 6.22045 5.63037 6.16968C5.75223 6.11891 5.86284 6.04452 5.9558 5.95079L10.2458 1.71079C10.3395 1.61783 10.4139 1.50723 10.4647 1.38537C10.5155 1.26351 10.5416 1.1328 10.5416 1.00079C10.5416 0.868781 10.5155 0.738075 10.4647 0.616216C10.4139 0.494356 10.3395 0.383755 10.2458 0.290792Z" fill="black" layoutX="164.0" layoutY="20.0" onMouseClicked="#showlocation_right" />
+                     </children></Pane>
+                  <Label layoutX="500.0" layoutY="40.0" styleClass="datetext" text="日期">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <Pane layoutX="243.0" layoutY="30.0" onMouseClicked="#switch_location" prefHeight="45.0" prefWidth="41.0" />
+                  <SVGPath content="M19.7082 4.29409L15.7082 0.294092C15.6149 0.200853 15.5043 0.126893 15.3824 0.0764322C15.2606 0.0259719 15.13 0 14.9982 0C14.7319 0 14.4765 0.105788 14.2882 0.294092C14.0999 0.482395 13.9941 0.73779 13.9941 1.00409C13.9941 1.27039 14.0999 1.52579 14.2882 1.71409L16.5882 4.00409H4.99819C4.73297 4.00409 4.47862 4.10945 4.29108 4.29699C4.10354 4.48452 3.99819 4.73888 3.99819 5.00409C3.99819 5.26931 4.10354 5.52366 4.29108 5.7112C4.47862 5.89873 4.73297 6.00409 4.99819 6.00409H18.9982C19.1956 6.00311 19.3883 5.9437 19.552 5.83337C19.7158 5.72304 19.8432 5.56671 19.9182 5.38409C19.9948 5.20198 20.0157 5.00127 19.9783 4.80728C19.9409 4.61329 19.8469 4.43472 19.7082 4.29409V4.29409ZM14.9982 8.00409H0.998186C0.800761 8.00508 0.608045 8.06448 0.444325 8.17481C0.280604 8.28515 0.153206 8.44147 0.0781863 8.62409C0.0016069 8.8062 -0.0193158 9.00692 0.0180584 9.2009C0.0554325 9.39489 0.149429 9.57347 0.288186 9.71409L4.28819 13.7141C4.38115 13.8078 4.49175 13.8822 4.61361 13.933C4.73547 13.9838 4.86617 14.0099 4.99819 14.0099C5.1302 14.0099 5.2609 13.9838 5.38276 13.933C5.50462 13.8822 5.61522 13.8078 5.70819 13.7141C5.80192 13.6211 5.87631 13.5105 5.92708 13.3887C5.97785 13.2668 6.00398 13.1361 6.00398 13.0041C6.00398 12.8721 5.97785 12.7414 5.92708 12.6195C5.87631 12.4977 5.80192 12.3871 5.70819 12.2941L3.40819 10.0041H14.9982C15.2634 10.0041 15.5178 9.89874 15.7053 9.7112C15.8928 9.52366 15.9982 9.26931 15.9982 9.00409C15.9982 8.73887 15.8928 8.48452 15.7053 8.29699C15.5178 8.10945 15.2634 8.00409 14.9982 8.00409Z" fill="black" layoutX="254.0" layoutY="47.0" onMouseClicked="#switch_location" />
+                  <Pane layoutX="777.0" layoutY="30.0" onMouseClicked="#search" prefHeight="48.0" prefWidth="96.0" styleClass="searchbutton" />
+                  <Label layoutX="805.0" layoutY="40.0" onMouseClicked="#search" styleClass="whitetext" text="搜尋" />
+
+                        <TextField fx:id="Date" alignment="CENTER" onKeyTyped="#set_date" layoutX="560.0" layoutY="30.0" prefHeight="48.0" prefWidth="165.0" promptText="YYYY/MM/DD" styleClass="textfield">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+               </children>
+            </Pane>
+            <Label fx:id="btnGroup5" alignment="CENTER" disable="true" layoutX="358.0" layoutY="168.0" onMouseClicked="#early_arrivetime" prefHeight="24.0" prefWidth="160.0" styleClass="text_hover" text="抵達時間(最早)">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="btnGroup1" alignment="CENTER" disable="true" layoutX="115.0" layoutY="127.0" onMouseClicked="#low_price" prefHeight="24.0" prefWidth="80.0" styleClass="text_hover" text="價格最低">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="btnGroup4" alignment="CENTER" disable="true" layoutX="95.0" layoutY="168.0" onMouseClicked="#shortest_flyingtime" prefHeight="24.0" prefWidth="120.0" styleClass="text_hover" text="飛行時間最短">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="btnGroup2" alignment="CENTER" disable="true" layoutX="358.0" layoutY="126.0" onMouseClicked="#early_departuretime" prefHeight="24.0" prefWidth="160.0" styleClass="text_hover" text="出發時間(最早)">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="btnGroup3" alignment="CENTER" disable="true" layoutX="620.0" layoutY="126.0" onMouseClicked="#latest_departuretime" prefHeight="24.0" prefWidth="160.0" styleClass="text_hover" text="出發時間(最晚)">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="btnGroup6" alignment="CENTER" disable="true" layoutX="620.0" layoutY="168.0" onMouseClicked="#latest_arrivetime" prefHeight="24.0" prefWidth="160.0" styleClass="text_hover" text="抵達時間(最晚)">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Pane fx:id="location_right" layoutX="293.0" layoutY="100.0" prefHeight="162.0" prefWidth="495.0" styleClass="shadowpane" visible="false">
+         <children>
+            <Label layoutX="35.0" layoutY="23.0" onMouseClicked="#TaipeiClicked_right" prefHeight="24.0" prefWidth="40.0" styleClass="blacktext" text="台北">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="35.0" layoutY="69.0" onMouseClicked="#SydneyClicked_right" prefHeight="24.0" prefWidth="40.0" styleClass="blacktext" text="雪梨">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="35.0" layoutY="115.0" onMouseClicked="#LAClicked_right" prefHeight="24.0" prefWidth="60.0" styleClass="blacktext" text="洛杉磯">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="147.0" layoutY="23.0" onMouseClicked="#TokyoClicked_right" prefHeight="24.0" prefWidth="40.0" styleClass="blacktext" text="東京">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="147.0" layoutY="69.0" onMouseClicked="#DubaiClicked_right" prefHeight="24.0" prefWidth="40.0" styleClass="blacktext" text="杜拜">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="147.0" layoutY="115.0" onMouseClicked="#NewYorkClicked_right" prefHeight="24.0" prefWidth="40.0" styleClass="blacktext" text="紐約">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="259.0" layoutY="23.0" onMouseClicked="#MaldivesClicked_right" prefHeight="24.0" prefWidth="80.0" styleClass="blacktext" text="馬爾地夫">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="259.0" layoutY="69.0" onMouseClicked="#LondonClicked_right" prefHeight="24.0" prefWidth="40.0" styleClass="blacktext" text="倫敦">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="371.0" layoutY="23.0" onMouseClicked="#SeoulClicked_right" prefHeight="24.0" prefWidth="40.0" styleClass="blacktext" text="首爾">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="371.0" layoutY="69.0" onMouseClicked="#ParisClicked_right" prefHeight="24.0" prefWidth="40.0" styleClass="blacktext" text="巴黎">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Pane fx:id="location_left" layoutX="46.0" layoutY="100.0" prefHeight="162.0" prefWidth="495.0" styleClass="shadowpane" visible="false">
+         <children>
+            <Label layoutX="35.0" layoutY="23.0" onMouseClicked="#TaipeiClicked_left" prefHeight="24.0" prefWidth="40.0" styleClass="blacktext" text="台北">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="35.0" layoutY="69.0" onMouseClicked="#SydneyClicked_left" prefHeight="24.0" prefWidth="40.0" styleClass="blacktext" text="雪梨">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="35.0" layoutY="115.0" onMouseClicked="#LAClicked_left" prefHeight="24.0" prefWidth="60.0" styleClass="blacktext" text="洛杉磯">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="147.0" layoutY="23.0" onMouseClicked="#TokyoClicked_left" prefHeight="24.0" prefWidth="40.0" styleClass="blacktext" text="東京">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="147.0" layoutY="69.0" onMouseClicked="#DubaiClicked_left" prefHeight="24.0" prefWidth="40.0" styleClass="blacktext" text="杜拜">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="147.0" layoutY="115.0" onMouseClicked="#NewYorkClicked_left" prefHeight="24.0" prefWidth="40.0" styleClass="blacktext" text="紐約">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="371.0" layoutY="23.0" onMouseClicked="#SeoulClicked_left" prefHeight="24.0" prefWidth="40.0" styleClass="blacktext" text="首爾">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="371.0" layoutY="69.0" onMouseClicked="#ParisClicked_left" prefHeight="24.0" prefWidth="40.0" styleClass="blacktext" text="巴黎">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="259.0" layoutY="69.0" onMouseClicked="#LondonClicked_left" prefHeight="24.0" prefWidth="40.0" styleClass="blacktext" text="倫敦">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="259.0" layoutY="23.0" onMouseClicked="#MaldivesClicked_left" prefHeight="24.0" prefWidth="80.0" styleClass="blacktext" text="馬爾地夫">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>

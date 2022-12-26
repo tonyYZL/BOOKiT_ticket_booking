@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="outerView" prefHeight="720.0" prefWidth="984.0" style="-fx-background-color: white;" stylesheets="@RecordScreen.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="ticket_booking_system.final_project.RecordController">
+    <children>
+        <ScrollPane hbarPolicy="NEVER" prefHeight="720.0" prefWidth="984.0" style="-fx-background-color: white;" vbarPolicy="NEVER">
+            <content>
+                <VBox fx:id="recordScreen" alignment="TOP_CENTER" fillWidth="false" minHeight="720.0" prefWidth="984.0" spacing="15.0">
+                    <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                    </padding>
+                </VBox>
+            </content>
+        </ScrollPane>
+      <ScrollPane fx:id="scroll" hbarPolicy="NEVER" prefHeight="720.0" prefWidth="984.0" vbarPolicy="NEVER" visible="false">
+         <content>
+            <VBox fx:id="modal" alignment="TOP_CENTER" prefHeight="1000.0" prefWidth="984.0" spacing="25.0" styleClass="modal-scene">
+               <children>
+                  <StackPane fx:id="template_1" maxHeight="268.0" maxWidth="633.0" minHeight="268.0" minWidth="633.0" onMouseClicked="#chosen" onMouseEntered="#hover" onMouseExited="#mouseOut" prefHeight="268.0" prefWidth="633.0" styleClass="hover-border">
+                     <children>
+                        <ImageView fitHeight="250.0" fitWidth="615.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/boarding_pass/1.png" />
+                           </image>
+                        </ImageView>
+                        <SVGPath content="M52 104C80.7188 104 104 80.7188 104 52C104 23.2812 80.7188 0 52 0C23.2812 0 0 23.2812 0 52C0 80.7188 23.2812 104 52 104Z" fill="#F9A826" opacity="0.5" scaleX="0.0" scaleY="0.0" />
+                        <SVGPath content="M78.763 33.1286C78.4058 32.771 77.9809 32.4871 77.5126 32.2934C77.0444 32.0997 76.5422 32 76.0349 32C75.5277 32 75.0255 32.0997 74.5573 32.2934C74.089 32.4871 73.6641 32.771 73.3069 33.1286L44.6813 61.5919L32.6547 49.6114C32.2838 49.2556 31.846 48.9759 31.3663 48.7881C30.8865 48.6004 30.3742 48.5083 29.8587 48.5172C29.3431 48.5261 28.8343 48.6357 28.3614 48.8398C27.8885 49.0439 27.4607 49.3385 27.1025 49.7067C26.7442 50.075 26.4625 50.5098 26.2734 50.9861C26.0844 51.4625 25.9917 51.9712 26.0006 52.4832C26.0095 52.9951 26.1199 53.5003 26.3254 53.9699C26.531 54.4395 26.8276 54.8643 27.1985 55.2201L41.9532 69.8714C42.3104 70.229 42.7354 70.5129 43.2036 70.7066C43.6718 70.9003 44.174 71 44.6813 71C45.1885 71 45.6907 70.9003 46.159 70.7066C46.6272 70.5129 47.0521 70.229 47.4093 69.8714L78.763 38.7373C79.153 38.38 79.4643 37.9464 79.6772 37.4637C79.8901 36.9811 80 36.4599 80 35.933C80 35.406 79.8901 34.8848 79.6772 34.4022C79.4643 33.9195 79.153 33.4859 78.763 33.1286Z" fill="white" scaleX="0.0" scaleY="0.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </StackPane>
+                  <StackPane fx:id="template_2" maxHeight="268.0" maxWidth="633.0" minHeight="268.0" minWidth="633.0" onMouseClicked="#chosen" onMouseEntered="#hover" onMouseExited="#mouseOut" prefHeight="268.0" prefWidth="633.0" styleClass="hover-border">
+                     <children>
+                        <ImageView fitHeight="250.0" fitWidth="615.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/boarding_pass/2.png" />
+                           </image>
+                        </ImageView>
+                        <SVGPath content="M52 104C80.7188 104 104 80.7188 104 52C104 23.2812 80.7188 0 52 0C23.2812 0 0 23.2812 0 52C0 80.7188 23.2812 104 52 104Z" fill="#F9A826" opacity="0.5" scaleX="0.0" scaleY="0.0" />
+                        <SVGPath content="M78.763 33.1286C78.4058 32.771 77.9809 32.4871 77.5126 32.2934C77.0444 32.0997 76.5422 32 76.0349 32C75.5277 32 75.0255 32.0997 74.5573 32.2934C74.089 32.4871 73.6641 32.771 73.3069 33.1286L44.6813 61.5919L32.6547 49.6114C32.2838 49.2556 31.846 48.9759 31.3663 48.7881C30.8865 48.6004 30.3742 48.5083 29.8587 48.5172C29.3431 48.5261 28.8343 48.6357 28.3614 48.8398C27.8885 49.0439 27.4607 49.3385 27.1025 49.7067C26.7442 50.075 26.4625 50.5098 26.2734 50.9861C26.0844 51.4625 25.9917 51.9712 26.0006 52.4832C26.0095 52.9951 26.1199 53.5003 26.3254 53.9699C26.531 54.4395 26.8276 54.8643 27.1985 55.2201L41.9532 69.8714C42.3104 70.229 42.7354 70.5129 43.2036 70.7066C43.6718 70.9003 44.174 71 44.6813 71C45.1885 71 45.6907 70.9003 46.159 70.7066C46.6272 70.5129 47.0521 70.229 47.4093 69.8714L78.763 38.7373C79.153 38.38 79.4643 37.9464 79.6772 37.4637C79.8901 36.9811 80 36.4599 80 35.933C80 35.406 79.8901 34.8848 79.6772 34.4022C79.4643 33.9195 79.153 33.4859 78.763 33.1286Z" fill="white" scaleX="0.0" scaleY="0.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </StackPane>
+                  <StackPane fx:id="template_3" maxHeight="268.0" maxWidth="633.0" minHeight="268.0" minWidth="633.0" onMouseClicked="#chosen" onMouseEntered="#hover" onMouseExited="#mouseOut" prefHeight="268.0" prefWidth="633.0" styleClass="hover-border">
+                     <children>
+                        <ImageView fitHeight="250.0" fitWidth="615.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/boarding_pass/3.png" />
+                           </image>
+                        </ImageView>
+                        <SVGPath content="M52 104C80.7188 104 104 80.7188 104 52C104 23.2812 80.7188 0 52 0C23.2812 0 0 23.2812 0 52C0 80.7188 23.2812 104 52 104Z" fill="#F9A826" opacity="0.5" scaleX="0.0" scaleY="0.0" />
+                        <SVGPath content="M78.763 33.1286C78.4058 32.771 77.9809 32.4871 77.5126 32.2934C77.0444 32.0997 76.5422 32 76.0349 32C75.5277 32 75.0255 32.0997 74.5573 32.2934C74.089 32.4871 73.6641 32.771 73.3069 33.1286L44.6813 61.5919L32.6547 49.6114C32.2838 49.2556 31.846 48.9759 31.3663 48.7881C30.8865 48.6004 30.3742 48.5083 29.8587 48.5172C29.3431 48.5261 28.8343 48.6357 28.3614 48.8398C27.8885 49.0439 27.4607 49.3385 27.1025 49.7067C26.7442 50.075 26.4625 50.5098 26.2734 50.9861C26.0844 51.4625 25.9917 51.9712 26.0006 52.4832C26.0095 52.9951 26.1199 53.5003 26.3254 53.9699C26.531 54.4395 26.8276 54.8643 27.1985 55.2201L41.9532 69.8714C42.3104 70.229 42.7354 70.5129 43.2036 70.7066C43.6718 70.9003 44.174 71 44.6813 71C45.1885 71 45.6907 70.9003 46.159 70.7066C46.6272 70.5129 47.0521 70.229 47.4093 69.8714L78.763 38.7373C79.153 38.38 79.4643 37.9464 79.6772 37.4637C79.8901 36.9811 80 36.4599 80 35.933C80 35.406 79.8901 34.8848 79.6772 34.4022C79.4643 33.9195 79.153 33.4859 78.763 33.1286Z" fill="white" scaleX="0.0" scaleY="0.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </StackPane>
+                  <StackPane fx:id="template_4" maxHeight="268.0" maxWidth="633.0" minHeight="268.0" minWidth="633.0" onMouseClicked="#chosen" onMouseEntered="#hover" onMouseExited="#mouseOut" prefHeight="268.0" prefWidth="633.0" styleClass="hover-border">
+                     <children>
+                        <ImageView fitHeight="250.0" fitWidth="615.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/boarding_pass/4.png" />
+                           </image>
+                        </ImageView>
+                        <SVGPath content="M52 104C80.7188 104 104 80.7188 104 52C104 23.2812 80.7188 0 52 0C23.2812 0 0 23.2812 0 52C0 80.7188 23.2812 104 52 104Z" fill="#F9A826" opacity="0.5" scaleX="0.0" scaleY="0.0" />
+                        <SVGPath content="M78.763 33.1286C78.4058 32.771 77.9809 32.4871 77.5126 32.2934C77.0444 32.0997 76.5422 32 76.0349 32C75.5277 32 75.0255 32.0997 74.5573 32.2934C74.089 32.4871 73.6641 32.771 73.3069 33.1286L44.6813 61.5919L32.6547 49.6114C32.2838 49.2556 31.846 48.9759 31.3663 48.7881C30.8865 48.6004 30.3742 48.5083 29.8587 48.5172C29.3431 48.5261 28.8343 48.6357 28.3614 48.8398C27.8885 49.0439 27.4607 49.3385 27.1025 49.7067C26.7442 50.075 26.4625 50.5098 26.2734 50.9861C26.0844 51.4625 25.9917 51.9712 26.0006 52.4832C26.0095 52.9951 26.1199 53.5003 26.3254 53.9699C26.531 54.4395 26.8276 54.8643 27.1985 55.2201L41.9532 69.8714C42.3104 70.229 42.7354 70.5129 43.2036 70.7066C43.6718 70.9003 44.174 71 44.6813 71C45.1885 71 45.6907 70.9003 46.159 70.7066C46.6272 70.5129 47.0521 70.229 47.4093 69.8714L78.763 38.7373C79.153 38.38 79.4643 37.9464 79.6772 37.4637C79.8901 36.9811 80 36.4599 80 35.933C80 35.406 79.8901 34.8848 79.6772 34.4022C79.4643 33.9195 79.153 33.4859 78.763 33.1286Z" fill="white" scaleX="0.0" scaleY="0.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </StackPane>
+                  <StackPane fx:id="template_5" maxHeight="268.0" maxWidth="633.0" minHeight="268.0" minWidth="633.0" onMouseClicked="#chosen" onMouseEntered="#hover" onMouseExited="#mouseOut" prefHeight="268.0" prefWidth="633.0" styleClass="hover-border">
+                     <children>
+                        <ImageView fitHeight="250.0" fitWidth="615.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/boarding_pass/5.png" />
+                           </image>
+                        </ImageView>
+                        <SVGPath content="M52 104C80.7188 104 104 80.7188 104 52C104 23.2812 80.7188 0 52 0C23.2812 0 0 23.2812 0 52C0 80.7188 23.2812 104 52 104Z" fill="#F9A826" opacity="0.5" scaleX="0.0" scaleY="0.0" />
+                        <SVGPath content="M78.763 33.1286C78.4058 32.771 77.9809 32.4871 77.5126 32.2934C77.0444 32.0997 76.5422 32 76.0349 32C75.5277 32 75.0255 32.0997 74.5573 32.2934C74.089 32.4871 73.6641 32.771 73.3069 33.1286L44.6813 61.5919L32.6547 49.6114C32.2838 49.2556 31.846 48.9759 31.3663 48.7881C30.8865 48.6004 30.3742 48.5083 29.8587 48.5172C29.3431 48.5261 28.8343 48.6357 28.3614 48.8398C27.8885 49.0439 27.4607 49.3385 27.1025 49.7067C26.7442 50.075 26.4625 50.5098 26.2734 50.9861C26.0844 51.4625 25.9917 51.9712 26.0006 52.4832C26.0095 52.9951 26.1199 53.5003 26.3254 53.9699C26.531 54.4395 26.8276 54.8643 27.1985 55.2201L41.9532 69.8714C42.3104 70.229 42.7354 70.5129 43.2036 70.7066C43.6718 70.9003 44.174 71 44.6813 71C45.1885 71 45.6907 70.9003 46.159 70.7066C46.6272 70.5129 47.0521 70.229 47.4093 69.8714L78.763 38.7373C79.153 38.38 79.4643 37.9464 79.6772 37.4637C79.8901 36.9811 80 36.4599 80 35.933C80 35.406 79.8901 34.8848 79.6772 34.4022C79.4643 33.9195 79.153 33.4859 78.763 33.1286Z" fill="white" scaleX="0.0" scaleY="0.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </StackPane>
+                  <StackPane fx:id="template_6" maxHeight="268.0" maxWidth="633.0" minHeight="268.0" minWidth="633.0" onMouseClicked="#chosen" onMouseEntered="#hover" onMouseExited="#mouseOut" prefHeight="268.0" prefWidth="633.0" styleClass="hover-border">
+                     <children>
+                        <ImageView fitHeight="250.0" fitWidth="615.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/boarding_pass/6.png" />
+                           </image>
+                        </ImageView>
+                        <SVGPath content="M52 104C80.7188 104 104 80.7188 104 52C104 23.2812 80.7188 0 52 0C23.2812 0 0 23.2812 0 52C0 80.7188 23.2812 104 52 104Z" fill="#F9A826" opacity="0.5" scaleX="0.0" scaleY="0.0" />
+                        <SVGPath content="M78.763 33.1286C78.4058 32.771 77.9809 32.4871 77.5126 32.2934C77.0444 32.0997 76.5422 32 76.0349 32C75.5277 32 75.0255 32.0997 74.5573 32.2934C74.089 32.4871 73.6641 32.771 73.3069 33.1286L44.6813 61.5919L32.6547 49.6114C32.2838 49.2556 31.846 48.9759 31.3663 48.7881C30.8865 48.6004 30.3742 48.5083 29.8587 48.5172C29.3431 48.5261 28.8343 48.6357 28.3614 48.8398C27.8885 49.0439 27.4607 49.3385 27.1025 49.7067C26.7442 50.075 26.4625 50.5098 26.2734 50.9861C26.0844 51.4625 25.9917 51.9712 26.0006 52.4832C26.0095 52.9951 26.1199 53.5003 26.3254 53.9699C26.531 54.4395 26.8276 54.8643 27.1985 55.2201L41.9532 69.8714C42.3104 70.229 42.7354 70.5129 43.2036 70.7066C43.6718 70.9003 44.174 71 44.6813 71C45.1885 71 45.6907 70.9003 46.159 70.7066C46.6272 70.5129 47.0521 70.229 47.4093 69.8714L78.763 38.7373C79.153 38.38 79.4643 37.9464 79.6772 37.4637C79.8901 36.9811 80 36.4599 80 35.933C80 35.406 79.8901 34.8848 79.6772 34.4022C79.4643 33.9195 79.153 33.4859 78.763 33.1286Z" fill="white" scaleX="0.0" scaleY="0.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </StackPane>
+                  <StackPane fx:id="template_7" maxHeight="268.0" maxWidth="633.0" minHeight="268.0" minWidth="633.0" onMouseClicked="#chosen" onMouseEntered="#hover" onMouseExited="#mouseOut" prefHeight="268.0" prefWidth="633.0" styleClass="hover-border">
+                     <children>
+                        <ImageView fitHeight="250.0" fitWidth="615.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/boarding_pass/7.png" />
+                           </image>
+                        </ImageView>
+                        <SVGPath content="M52 104C80.7188 104 104 80.7188 104 52C104 23.2812 80.7188 0 52 0C23.2812 0 0 23.2812 0 52C0 80.7188 23.2812 104 52 104Z" fill="#F9A826" opacity="0.5" scaleX="0.0" scaleY="0.0" />
+                        <SVGPath content="M78.763 33.1286C78.4058 32.771 77.9809 32.4871 77.5126 32.2934C77.0444 32.0997 76.5422 32 76.0349 32C75.5277 32 75.0255 32.0997 74.5573 32.2934C74.089 32.4871 73.6641 32.771 73.3069 33.1286L44.6813 61.5919L32.6547 49.6114C32.2838 49.2556 31.846 48.9759 31.3663 48.7881C30.8865 48.6004 30.3742 48.5083 29.8587 48.5172C29.3431 48.5261 28.8343 48.6357 28.3614 48.8398C27.8885 49.0439 27.4607 49.3385 27.1025 49.7067C26.7442 50.075 26.4625 50.5098 26.2734 50.9861C26.0844 51.4625 25.9917 51.9712 26.0006 52.4832C26.0095 52.9951 26.1199 53.5003 26.3254 53.9699C26.531 54.4395 26.8276 54.8643 27.1985 55.2201L41.9532 69.8714C42.3104 70.229 42.7354 70.5129 43.2036 70.7066C43.6718 70.9003 44.174 71 44.6813 71C45.1885 71 45.6907 70.9003 46.159 70.7066C46.6272 70.5129 47.0521 70.229 47.4093 69.8714L78.763 38.7373C79.153 38.38 79.4643 37.9464 79.6772 37.4637C79.8901 36.9811 80 36.4599 80 35.933C80 35.406 79.8901 34.8848 79.6772 34.4022C79.4643 33.9195 79.153 33.4859 78.763 33.1286Z" fill="white" scaleX="0.0" scaleY="0.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </StackPane>
+
+
+               </children>
+               <padding>
+                  <Insets bottom="103.0" top="103.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <Pane fx:id="titlePane" prefHeight="93.0" prefWidth="984.0" styleClass="header-pane" visible="false">
+         <children>
+            <HBox alignment="CENTER" layoutX="40.0" prefHeight="93.0" spacing="23.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="32.0" styleClass="rectangle" width="17.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-text" text="選擇你的登機證樣式">
+                     <font>
+                        <Font name="Apple SD Gothic Neo Regular" size="13.0" />
+                     </font></Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="730.0" prefHeight="93.0" spacing="21.0">
+               <children>
+                  <Label onMouseClicked="#cancel" prefHeight="48.0" prefWidth="96.0" styleClass="cancel-btn" text="取消">
+                     <font>
+                        <Font name="Apple SD Gothic Neo Regular" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label onMouseClicked="#getBoardingPass" prefHeight="48.0" prefWidth="96.0" styleClass="get-btn" text="確定">
+                     <font>
+                        <Font name="Apple SD Gothic Neo Regular" size="13.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <VBox fx:id="loadingPane" alignment="CENTER" prefHeight="720.0" prefWidth="984.0" styleClass="loading-pane" visible="false" />
+    </children>
+</Pane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane fx:id="outerView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="984.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="ticket_booking_system.final_project.SearchController">
+    <children>
+        <ScrollPane hbarPolicy="NEVER" prefHeight="720.0" prefWidth="984.0" style="-fx-background-color: transparent;" vbarPolicy="NEVER">
+            <content>
+                <VBox fx:id="vbox" alignment="TOP_CENTER" minHeight="720.0" prefWidth="984.0" style="-fx-background-color: white;">
+                    <padding>
+                        <Insets bottom="40.0" top="40.0" />
+                    </padding>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </children>
+</Pane>
