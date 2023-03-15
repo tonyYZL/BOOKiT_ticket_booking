@@ -7,9 +7,9 @@ public class DatabaseConnection {
     public Connection databaseLink;
 
     public Connection getConnection() {
-        String databaseName = "system";
-        String databaseUser = "root";
-        String databasePassword = "tony920214";
+        String databaseName = "yourDBName";
+        String databaseUser = "yourDBUsername";
+        String databasePassword = "yourDBPassword";
         String url = "jdbc:mysql://localhost/" + databaseName;
 
         try {
